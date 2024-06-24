@@ -30,15 +30,11 @@ public class Program {
 		System.out.println();
 		System.out.print("Digite o numero que deseja encontrar: ");
 		int number = sc.nextInt();
-		int x, y;
 
 		for (int i = 0; i < m; i++) {
 			for (int j = 0; j < n; j++) {
 				if (mat[i][j] == number) {
-					x = i;
-					y = j;
-
-					System.out.println("Position: " + x + "," + y);
+					System.out.println("Position: " + i + "," + j);
 
 					if (j > 0) {
 						System.out.println("Left: " + mat[i][j - 1]);
